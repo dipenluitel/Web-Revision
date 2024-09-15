@@ -1,0 +1,93 @@
+.main {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.header {
+    margin: 2px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.header-body {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.photo {
+    width: 200px;
+    height: 350px;
+    background-color: gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 350px;
+}
+
+.bio {
+    border: 5px solid black;
+    width: 200px;
+    padding: 20px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: 200px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.section {
+    margin: 20px;
+    padding: 10px;
+}
+
+.about-me, .hobbies, .contact {
+    margin-bottom: 20px;
+}
+
+.footer {
+    margin: 10px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    text-align: center;
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
