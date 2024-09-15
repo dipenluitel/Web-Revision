@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Dipen Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Dipen <span>Luitel</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Service</a>
+                <a href="#">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="main.png" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Dipen</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="typewriter-text"></span><label for="">|</label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
+
+                </p>
+                <div class="social-links">
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <button>Hire me</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-me-section">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About <span>Me</span></h2>
+                <h3>Full Stack Developer!</h3>
+                <p>
+                    I am a skilled web designer with over 3 years of experience in the industry.
+                    My passion lies in creating captivating website designs and implementing them
+                    through frontend development. I take pride in staying up-to-date with current
+                    design trends and leveraging my creativity to produce visually appealing and
+                    user-friendly websites.
+                </p>
+                <h3>Designer</h3>
+                <p>
+                    
+ChatGPT said:
+ChatGPT
+I am a skilled designer with over 3 years of experience in creating visually compelling designs. My expertise spans various mediums, from web and graphic design to UI/UX, ensuring each project blends aesthetics with functionality. I’m passionate about crafting user-centric designs that capture attention and offer seamless experiences. With a keen eye for detail and dedication to current design trends, I deliver work that upholds creativity and professionalism.
+                </p>
+                <h3>Ethical Hacker</h3>
+                <p>
+                    I am a certified ethical hacker with over 3 years of experience in identifying and mitigating security vulnerabilities. My focus is on ensuring robust protection for web applications and networks through penetration tests and vulnerability assessments. I leverage cutting-edge tools and techniques to stay ahead of emerging threats. With a strong commitment to ethical hacking, I strive to safeguard organizations from cyberattacks while contributing to a more secure digital environment.
+                </p>
+                
+                <a href="#" class="btn">More About Me</a>
+            </div>
+            <div class="about-img">
+                <img src="Dipen-Luitel.png" alt="About Image">
+            </div>
+        </div>
+    </section>
+
+
+    
+    <section class="services">
+        <h1 class="heading">My <span class="span">Services</span></h1>
+        <div class="services-container">
+            <div class="marquee">
+                <div class="marquee-inner">
+                    <div class="service-card">
+                        <i class="fas fa-code"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>UX/UI design focuses on creating intuitive, user-friendly interfaces by prioritizing usability, consistency, and 
+                            accessibility. It ensures a seamless experience through responsive layouts, clear navigation, and pleasing 
+                            designs.</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-pencil-alt"></i>
+                        <h2>Web Security</h2>
+                        <p>To safeguards websites through encryption, firewalls, and secure coding practices. It protects data by using 
+                            multi-factor authentication, regular security audits, and robust encryption for both transmitted and stored information.</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <i class="fab fa-apple"></i>
+                        <h2>Web Design</h2>
+                        <p>Web design emphasizes responsive layouts and user-centered aesthetics. It combines fast load times, SEO optimization, and 
+                            intuitive navigation to create visually appealing, functional, and accessible websites across all devices.</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-code"></i>
+                        <h2>Web Penetration</h2>
+                        <p>Web penetration testing involves identifying vulnerabilities in web applications by simulating cyberattacks. to secure
+                             websites weaknesses in security measures, allowing for proactive fixes to prevent security breaches.</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-pencil-alt"></i>
+                        <h2>Graphics Design</h2>
+                        <p>It combines visuals, typography, and colors to communicate ideas effectively. It creates visually appealing 
+                            designs for print and digital media, ensuring clarity, brand identity, and audience engagement.</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <i class="fab fa-apple"></i>
+                        <h2>Animated Video's</h2>
+                        <p>Animated video design uses motion graphics and animation to tell stories, explain concepts, or promote products. It blends 
+                            creativity and technical skills to engage viewers through dynamic visuals and compelling narratives.</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    <section class="latest-projects">
+        <h2>Latest<span>Project</span></h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200?text=UI+UX" alt="UI UX Design">
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200?text=Website+Development" alt="Website Development">
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200?text=Ethical+Hacking" alt="Ethical Hacking">
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <div class="footer_bg">
+        <div class="footer_bg_one"></div>
+        <div class="footer_bg_two"></div>
+    </div>
+
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+    >
+        <defs>
+            <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s58 18 88 18 
+                58-18 88-18 58 18 88 18v44h-352z"
+            />
+        </defs>
+        <g class="waves">
+            <use
+                xlink:href="#gentle-wave"
+                x="50"
+                y="0"
+                fill="#03ffff"
+                fill-opacity=".2"
+            />
+            <use
+                xlink:href="#gentle-wave"
+                x="50"
+                y="3"
+                fill="#03ffff"
+                fill-opacity=".5"
+            />
+            <use
+                xlink:href="#gentle-wave"
+                x="50"
+                y="6"
+                fill="#03ffff"
+                fill-opacity=".9"
+            />
+        </g>
+    </svg>
+
+    <div class="footer_content">
+        <div class="footer_bottom">
+            <p class="mb-0 f_400">© DipenLuitel Personal Page.. 2024 All rights reserved.</p>
+            <p>Made by <a href="http://dipenluitel30.com.np" target="_blank">Dipen Luitel</a></p>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
