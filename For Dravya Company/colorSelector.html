@@ -1,1 +1,37 @@
-Color selector for tree view
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color and Adjust Width</title>
+    <style>
+        .list-item{
+            margin: 10px;
+            padding: 5px;
+            display: inline-block;
+            width: auto; /* Let width be auto initially */
+            transition: width 0.3s ease, background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <h1>Click Me in Text "HTML" Below:</h1>
+        <p> Selector Color for TEXTS</p>
+        <li class="list-item">HTML</li>
+    </ul>
+
+    <script>
+        function changeBackgroundColor() {
+            var li = document.querySelector('.list-item');
+            li.style.backgroundColor = 'green'; // Change background color to green
+
+            // Dynamically adjust width based on text length (each character occupies approx. 1ch)
+            var textLength = li.textContent.length;
+            li.style.width = `${textLength + 2}ch`; // +2 to add padding/margin space
+        }
+
+        document.querySelector('.list-item').onclick = changeBackgroundColor;
+    </script>
+</body>
+</html>
