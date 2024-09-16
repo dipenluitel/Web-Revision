@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Structure with Toggle</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        aside {
+            background-color: grey;
+            width: 220px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        aside h1 {
+            color: white;
+        }
+        .container {
+            margin-left: 250px;
+        }
+        .tree ul {
+            padding-left: 20px;
+            list-style-type: none;
+            position: relative;
+        }
+        .tree ul ul {
+            display: none; /* Hidden by default */
+        }
+        .tree li {
+            margin: 0;
+            padding: 10px 5px;
+            position: relative;
+            cursor: pointer;
+        }
+        .tree li::before, .tree li::after {
+            content: '';
+            position: absolute;
+            left: -20px;
+        }
+        .tree li::before {
+            border-left: 2px solid black;
+            top: 0;
+            height: 100%;
+            width: 1px;
+        }
+        .tree li::after {
+            border-top: 2px solid black;
+            top: 10px;
+            width: 20px;
+            height: 1px;
+        }
+        .tree > ul > li::before, .tree > ul > li::after {
+            display: none;
+        }
+        .tree li {
+            padding-left: 20px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        /* Style for open/close toggle */
+        .toggle::before {
+            content: '+ ';
+            font-size: 18px;
+            margin-right: 10px;
+        }
+        .toggle.active::before {
+            content: '- ';
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <nav></nav>
+        </header>
+        <aside>
+            <h1>Tree</h1>
+            <div class="tree">
+                <ul>
+                    <li>
+                        <span class="toggle">Root</span>
+                        <ul>
+                            <li>
+                                <span class="toggle">Branch1</span>
+                                <ul>
+                                    <li>Fruit1</li>
+                                    <li>Fruit2</li>
+                                    <li>Fruit3</li>
+                                    <li>Fruit4</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="toggle">Branch2</span>
+                                <ul>
+                                    <li>Fruit1</li>
+                                    <li>Fruit2</li>
+                                    <li>Fruit3</li>
+                                    <li>Fruit4</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="toggle">Branch3</span>
+                                <ul>
+                                    <li>Fruit1</li>
+                                    <li>Fruit2</li>
+                                    <li>Fruit3</li>
+                                    <li>Fruit4</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="toggle">Branch4</span>
+                                <ul>
+                                    <li>Fruit1</li>
+                                    <li>Fruit2</li>
+                                    <li>Fruit3</li>
+                                    <li>Fruit4</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="container">
+            <h1>Container Class</h1>
+        </div>
+    </div>
+
+    <script>
+        // Get all toggle elements
+        const toggles = document.querySelectorAll('.toggle');
+        
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                // Toggle active class for the current item
+                const nextUl = toggle.nextElementSibling;
+                if (nextUl && nextUl.tagName === 'UL') {
+                    nextUl.style.display = nextUl.style.display === 'none' || nextUl.style.display === '' ? 'block' : 'none';
+                    toggle.classList.toggle('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
