@@ -5,33 +5,27 @@
 You can see terminal at the buttom of the page
 # Method1
 **creating the project folder**
-
 <code>mkdir myApp</code>
 
 **Changing Directory to project folder**
-
 <code>cd myApp</code>
 
 **create new MVc**
-
 <code>dotnet new mvc</code>
 
 **Running App**
-
 <code>dotnet run</code>
 
 # Method2
 **create new MVc with project name**
-
 <code>dotnet new mvc -o myApp</code>
 
 **Running App**
-
 <code>code -r myApp</code>
 
 **Trust HTTP Certificates**
-
 <code>dotnet dev-certs https --trust</code>
+
 <br />
 Finally we find something like this in terminal<br />
 <code> Now listening on: http://localhost:5153</code>
