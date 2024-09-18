@@ -39,7 +39,7 @@ For example, in your view, you can assign a value to something like ViewData["Ti
 This will display the title on the page where the &lt;h2&gt; tag is.
 
 **Page Layout:**
-The HTML code you write in a view (like the <h2> and <h3> tags) is just part of the complete page.
+The HTML code you write in a view (like the  &lt;h2&gt; and &lt;h3&gt; tags) is just part of the complete page.
 Other sections of the webpage, like the header, footer, or navigation, are managed by layout files or other shared view files that control the common structure of the whole page.
 
 In summary, Razor allows you to mix C# code with HTML easily using the @ symbol, and the view you create is just one part of the complete webpage, with other parts managed by layout or shared views.
