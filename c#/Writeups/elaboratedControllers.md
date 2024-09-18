@@ -67,7 +67,10 @@ Many processes in a restaurant affect various parts of the operation, like ensur
 
 
 <h4>Summary</h4>
-**In this explanation:**
+In this explanation:
+
 1. The controller is compared to a restaurant manager, responsible for managing requests and responses.
+
 2. Action methods are likened to waiters taking specific orders.
-3 The principles of controller class conventions, explicit dependencies, and the MVC pattern are illustrated with real-world analogies to enhance understanding.
+   
+3. The principles of controller class conventions, explicit dependencies, and the MVC pattern are illustrated with real-world analogies to enhance understanding.
