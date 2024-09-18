@@ -115,9 +115,3 @@ This challenge helps reinforce learning, build habits, and develop a strong port
   <li>Responsive Card Layout: Build a card layout using CSS Grid/Flexbox that adapts based on screen size.</li>
 </ul>
 
-<h2>HTML, CSS, and JavaScript Pro 30 Days Project</h2>
-<p>The above-discussed projects represent the core tasks completed in the pro 30-day project challenge. Each task builds upon basic HTML, CSS, and JavaScript knowledge and culminates in advanced skills such as creating responsive designs, dynamic modals, and sophisticated layouts using flexbox, grid, and media queries.</p>
-
-<h2>Website</h2>
-<p>Additionally, I created a personal website using HTML, CSS, and JavaScript, incorporating animations and transitions to enhance the user experience. The website is fully responsive, with an intuitive design focused on showcasing my projects and skills.</p>
-
