@@ -86,8 +86,13 @@ public IActionResult About()
 </code>
 
 **View (About.cshtml):**
-<code>&lt;h2&gt;@ViewData["Message"]&lt;/h2&gt; <!-- Display the message passed from the controller. -->
-&lt;p&gt;Year: @ViewData["Year"]&lt;/p&gt; <!-- Display the year passed from the controller. --></code>
+
+<code>
+
+&lt;h2&gt;@ViewData["Message"]&lt;/h2&gt; <!-- Display the message passed from the controller. -->
+&lt;p&gt;Year: @ViewData["Year"]&lt;/p&gt; <!-- Display the year passed from the controller. -->
+
+</code>
 
 In the example above, the message "This is a ViewData example." and the year 2024 are passed from the controller to the view using ViewData.
 
