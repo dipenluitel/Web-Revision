@@ -113,8 +113,12 @@ public IActionResult Contact()
 </code>
 
 **View (About.cshtml):**
-<code>&lt;h2&gt;@ViewBag["Message"]&lt;/h2&gt; <!-- Display the message using ViewBag. -->
-&lt;p&gt;Year: @ViewBag["Year"]&lt;/p&gt; <!-- Display the year using viewBag. --></code>
+<code>
+
+&lt;h2&gt;@ViewBag["Message"]&lt;/h2&gt; <!-- Display the message using ViewBag. -->
+&lt;p&gt;Year: @ViewBag["Year"]&lt;/p&gt; <!-- Display the year using viewBag. -->
+
+</code>
 
 **Summary of the differences between ViewData and ViewBag**
 **ViewData**
