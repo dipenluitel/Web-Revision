@@ -23,3 +23,30 @@ For example, if you have an About action in the HomeController, you would create
 
 
 </code>
+
+**Razor Markup:**
+
+1. Razor is a syntax used in ASP.NET MVC views to combine C# code with HTML.
+2. The @ symbol is used to switch from HTML to C# code. For example, if you want to insert C# code into your HTML, you use the @ symbol to start writing C# inside the HTML.
+
+**Running C# Code:**
+1. You can write C# code inside Razor by using curly braces { }. These are called Razor code blocks.
+For example, in your view, you can assign a value to something like ViewData["Title"] = "About";. This would set the page title to "About".
+
+**Displaying C# Values in HTML:**
+1. If you want to display a C# value inside your HTML, just use the @ symbol followed by the variable name. For instance, you can show the title like this:
+<code>&lt;h2&gt;@ViewData["Title"]&lt;/h2&gt;</code>
+This will display the title on the page where the &lt;h2&gt; tag is.
+
+**Page Layout:**
+The HTML code you write in a view (like the <h2> and <h3> tags) is just part of the complete page.
+Other sections of the webpage, like the header, footer, or navigation, are managed by layout files or other shared view files that control the common structure of the whole page.
+
+In summary, Razor allows you to mix C# code with HTML easily using the @ symbol, and the view you create is just one part of the complete webpage, with other parts managed by layout or shared views.
+
+
+
+
+
+
+
