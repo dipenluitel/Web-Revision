@@ -8,7 +8,6 @@ A **30 Days Revision Challenge** (Coding Challenge) is a self-imposed or communi
 <b>SEO Based:</b> Help's in google Ranking.  <br />
   <br />
 This challenge helps reinforce learning, build habits, and develop a strong portfolio of web projects.  <br />
-<h1>30 Days of HTML, CSS, and JavaScript Projects</h1>
 
 
 <h2>HTML, CSS, and JavaScript Basic 30 Days Task</h2>
