@@ -1,4 +1,6 @@
-  <h1>30-Day HTML, CSS, and JavaScript Project Challenge for Pros</h1>
+  <h2>HTML, CSS, and JavaScript Pro 30 Days Project</h2>
+<p>The above-discussed projects represent the core tasks completed in the pro 30-day project challenge. Each task builds upon basic HTML, CSS, and JavaScript knowledge and culminates in advanced skills such as creating responsive designs, dynamic modals, and sophisticated layouts using flexbox, grid, and media queries.</p>
+
 
   <h2>Week 1: Foundation and UI Components</h2>
 
