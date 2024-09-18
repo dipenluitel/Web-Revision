@@ -16,10 +16,10 @@ For example, if you have an About action in the HomeController, you would create
 @{
     ViewData["Title"] = "About";
 }
-<h2>@ViewData["Title"].</h2>
-<h3>@ViewData["Message"]</h3>
+&lt;h2&gt;@ViewData["Title"].&lt;/h2&gt;
+&lt;h3&gt;@ViewData["Message"]&lt;/h3&gt;
 
-<p>Use this area to provide additional information.</p>
+&lt;p&gt;Use this area to provide additional information.&lt;/p&gt;
 
 
 </code>
