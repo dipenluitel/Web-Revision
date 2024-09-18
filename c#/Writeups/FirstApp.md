@@ -1,7 +1,7 @@
 # My APP assumes familiarity with VS Code. 
 
 1. Look at menu bar to see menu **Terminal**
-2. Click in Terminal
+2. Click in **Terminal**
 3. Then click in **New Terminal**
 
 # You can see terminal at the buttom of the page
