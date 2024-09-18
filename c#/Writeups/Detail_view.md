@@ -212,7 +212,7 @@ By default, scope identifiers use the format b-{STRING}, where the {STRING} plac
 
 <code>
     &lt;ItemGroup&gt;
-  <None Update="{Pages|Views}/Index.cshtml.css" CssScope="custom-scope-identifier" />
+  &lt;None Update="{Pages|Views}/Index.cshtml.css" CssScope="custom-scope-identifier" /&gt;
   &lt;/ItemGroup&gt;
 </code>
       
