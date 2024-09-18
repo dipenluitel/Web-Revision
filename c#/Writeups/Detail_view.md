@@ -50,11 +50,12 @@ In ASP.NET MVC, when you write a controller action (a method in the controller),
 
 **ViewResult:** This is the result type that instructs the framework to render a view (i.e., an HTML page). It’s just one of many types of ActionResult. Other types include returning JSON data, files, or redirects.
 Example of Returning a View:
+
 **1. Creating a ViewResult:**
 Technically, you could write code to create and return a ViewResult directly from the action, but that’s not usually done because there’s an easier way.
+
 **2. Using the View Helper:**
-Most controllers in ASP.NET inherit from a base class called Controller. This class gives you access to a method called View(), which automatically creates and returns a ViewResult for you.
-Instead of manually constructing a ViewResult, you can just call the View() method in your action method, which is much simpler.
+Most controllers in ASP.NET inherit from a base class called Controller. This class gives you access to a method called View(), which automatically creates and returns a ViewResult for you.Instead of manually constructing a ViewResult, you can just call the View() method in your action method, which is much simpler.
 
 **Example Code in HomeController.cs:**
 public IActionResult About()
