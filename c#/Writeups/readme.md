@@ -16,7 +16,8 @@ Page-focused applications can be easily scaled to accommodate additional feature
 
 **Maintainability:**
 Changes to one component (model, view, or controller) can often be made without impacting the others, enhancing the maintainability of the codebase. This decoupling simplifies debugging and updates, making it easier to manage long-term projects.
-** Testability:
+
+**Testability:**
 The MVC architecture facilitates unit testing of individual components. Developers can write tests for models, views, and controllers separately, leading to more reliable and robust applications.
 
 # Disadvantages of Page-Focused Web UI with MVC
