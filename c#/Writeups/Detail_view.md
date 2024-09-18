@@ -74,6 +74,7 @@ ViewData is a dictionary of key-value pairs, where the key is a string. You can 
 **Requires Casting:** You need to cast the value to the appropriate data type when you retrieve it.
 Example of ViewData:
 **Controller (HomeController.cs):**
+
 <code>
 public IActionResult About()
 {
@@ -82,6 +83,7 @@ public IActionResult About()
     return View();
 }
 </code>
+
 **View (About.cshtml):**
 <code>&lt;h2&gt;@ViewData["Message"]&lt;/h2&gt; <!-- Display the message passed from the controller. -->
 &lt;p&gt;Year: @ViewData["Year"]&lt;/p&gt; <!-- Display the year passed from the controller. --></code>
@@ -94,6 +96,7 @@ ViewBag is a dynamic object that provides a more flexible way to pass data betwe
 **Type:** ViewBag is a dynamic object (no need for typecasting).
 **Syntax:** You set properties using dot notation, like ViewBag.PropertyName.
 Example of ViewBag:
+
 <code>
 public IActionResult Contact()
 {
@@ -102,6 +105,7 @@ public IActionResult Contact()
     return View();
 }
 </code>
+
 **View (About.cshtml):**
 <code>&lt;h2&gt;@ViewBag["Message"]&lt;/h2&gt; <!-- Display the message using ViewBag. -->
 &lt;p&gt;Year: @ViewBag["Year"]&lt;/p&gt; <!-- Display the year using viewBag. --></code>
@@ -150,12 +154,15 @@ ASP.NET Core handles the linking of isolated CSS files to their respective compo
 Example of CSS Isolation
 Let’s walk through an example:
 **Step 1: Create a Razor Component (or Page)**
+
 <code>
 &lt;h1 class="title"&gt;Welcome to MyComponent&lt;/h1&gt;
 &lt;p&gt;This is a paragraph inside the MyComponent Razor component.&lt;/p&gt;
 </code>
+
 **Step 2: Create an Isolated CSS File**
 Create a CSS file with the same name as the component, but with a .razor.css extension. This file contains the styles specific to MyComponent.
+
 <code>
 .title {
     color: blue;
@@ -166,27 +173,30 @@ p {
     color: green;
 }
 </code>
+
 **Step 3: Automatic Scoping**\
 When the application is run, ASP.NET Core will automatically add unique attributes to the HTML elements inside MyComponent.razor and scope the styles in MyComponent.razor.css to those elements.
 
-For example, the rendered HTML might look like this:
 <code>
 &lt;h1 class="title mycomponent-css-isolated-scope"&gt;Welcome to MyComponent&lt;/h1&gt;
 &lt;p class="mycomponent-css-isolated-scope"&gt;This is a paragraph inside the MyComponent Razor component.&lt;/p&gt;
 </code>
+
 And the CSS will be applied only to elements with the mycomponent-css-isolated-scope class, preventing any interference with styles on other components or pages.
 
 **Benefits of CSS Isolation**
-**Prevents Style Conflicts:** CSS rules scoped to one component won’t affect elements in other components, reducing the risk of unintentional styling conflicts.
 
-**Encapsulation:** Each component can have its own isolated styles, making it easier to manage styles for individual components.
+**1. Prevents Style Conflicts:** CSS rules scoped to one component won’t affect elements in other components, reducing the risk of unintentional styling conflicts.
 
-**Simplifies Large Applications:** In large applications with many components, CSS isolation helps keep the styles organized and prevents the need for deeply nested selectors.
+**2. Encapsulation:** Each component can have its own isolated styles, making it easier to manage styles for individual components.
+
+**3. Simplifies Large Applications:** In large applications with many components, CSS isolation helps keep the styles organized and prevents the need for deeply nested selectors.
 
 **Drawbacks of CSS Isolation**
-**Duplication of Styles:** In cases where many components share the same styles, CSS isolation might lead to style duplication unless a global stylesheet is used for common styles.
 
-**Browser Support:** While most modern browsers support the technique used for CSS isolation, older browsers may have limitations, especially in handling scoped styles.
+**1. Duplication of Styles:** In cases where many components share the same styles, CSS isolation might lead to style duplication unless a global stylesheet is used for common styles.
+
+**2. Browser Support:** While most modern browsers support the technique used for CSS isolation, older browsers may have limitations, especially in handling scoped styles.
 
 **Conclusion**
 CSS isolation in ASP.NET Core allows you to build cleaner, more maintainable applications by scoping styles to individual components. This feature is especially useful in large applications, where avoiding style conflicts and managing CSS across many components can become challenging. It provides a flexible way to write component-specific styles without affecting the rest of your application.
@@ -205,19 +215,23 @@ By default, scope identifiers use the format b-{STRING}, where the {STRING} plac
   <None Update="{Pages|Views}/Index.cshtml.css" CssScope="custom-scope-identifier" />
   &lt;/ItemGroup&gt;
 </code>
+      
 In the preceding example, the CSS generated for Index.cshtml.css changes its scope identifier from b-{STRING} to custom-scope-identifier.
 
 Use scope identifiers to achieve inheritance with scoped CSS files. In the following project file example, a BaseView.cshtml.css file contains common styles across views. A DerivedView.cshtml.css file inherits these styles.
+
 <code>
  &lt;ItemGroup&gt;
-  <None Update="{Pages|Views}/BaseView.cshtml.css" CssScope="custom-scope-identifier" />
-  <None Update="{Pages|Views}/DerivedView.cshtml.css" CssScope="custom-scope-identifier" />
+   &lt;None Update="{Pages|Views}/BaseView.cshtml.css" CssScope="custom-scope-identifier" /&gt;
+   &lt;None Update="{Pages|Views}/DerivedView.cshtml.css" CssScope="custom-scope-identifier" /&gt;
 &lt;/ItemGroup&gt;
 </code>
-Use the wildcard (*) operator to share scope identifiers across multiple files:
+
+Use the wildcard operator to share scope identifiers across multiple files:
+
 <code>
  &lt;ItemGroup&gt;
-  <None Update="{Pages|Views}/*.cshtml.css" CssScope="custom-scope-identifier" />
+  &lt;None Update="{Pages|Views}/*.cshtml.css" CssScope="custom-scope-identifier" /&gt;
  &lt;/ItemGroup&gt;
 </code>
 
