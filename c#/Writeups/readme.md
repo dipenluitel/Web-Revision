@@ -8,7 +8,7 @@ ensuring a clean separation of concerns.
 Enhanced User Experience:
 The page-focused approach allows for a clearer and more organized presentation of content. By dividing the application into distinct pages, users can easily navigate and locate the information they need, improving overall satisfaction.
 
-** Modularity:
+** Modularity: **
 The separation of concerns inherent in MVC architecture enables modular development. Developers can work on different components independently, leading to more efficient collaboration and easier maintenance.
 
 ** Scalability:
