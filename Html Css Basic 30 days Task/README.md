@@ -10,8 +10,6 @@ A **30 Days Revision Challenge** (Coding Challenge) is a self-imposed or communi
 This challenge helps reinforce learning, build habits, and develop a strong portfolio of web projects.  <br />
 <h1>30 Days of HTML, CSS, and JavaScript Projects</h1>
 
-<h2>For Dravya Company</h2>
-<p>This project was developed to cater to the needs of Dravya Company. It outlines the foundational concepts and skills learned in HTML, CSS, and JavaScript, with tasks specifically structured for practical and hands-on learning.</p>
 
 <h2>HTML, CSS, and JavaScript Basic 30 Days Task</h2>
 <p>In this section, simple web pages were created to understand the basic structure of web development, focusing on using <code>div</code> elements and managing layouts. Below are some of the tasks:</p>
