@@ -15,11 +15,14 @@ You can see terminal at the buttom of the page
 
 **Running App**
 <code>dotnet run</code>
+
 # Method2
 **create new MVc with project name**
 <code>dotnet new mvc -o myApp</code>
+
 **Running App**
 <code>code -r myApp</code>
+
 **Trust HTTP Certificates**
 <code>dotnet dev-certs https --trust</code>
 
@@ -27,5 +30,6 @@ You can see terminal at the buttom of the page
 <code> Now listening on: http://localhost:5153</code>
 
 paste the url in browser
+
 **Boom** New app sucessfully created!!!!!!!!!
 
