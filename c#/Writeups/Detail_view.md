@@ -154,13 +154,15 @@ CSS isolation is a feature in ASP.NET Core that allows you to create styles that
 When you use CSS isolation, the styles defined for a particular component or page will only apply to that specific component, and not globally across your entire application.
 
 **How CSS Isolation Works**
-Scoped Styles:
-
+**Scoped Styles:**
 When you define styles for a component or a page using CSS isolation, ASP.NET Core automatically scopes those styles to that component by attaching a unique identifier (or scope attribute) to the HTML elements and the corresponding CSS rules.
+
 **Separate CSS File:**
 For each component, you create a separate CSS file that contains the styles specific to that component. The name of this CSS file must match the component or page it belongs to, with the .css extension.
+
 **Automatic Handling:**
 ASP.NET Core handles the linking of isolated CSS files to their respective components. You don’t need to manually link or import the CSS files in the component files.
+
 Example of CSS Isolation
 Let’s walk through an example:
 **Step 1: Create a Razor Component (or Page)**
