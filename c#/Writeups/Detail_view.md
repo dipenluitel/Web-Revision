@@ -11,3 +11,15 @@ To create a view for a specific controller action:<br>
 2. Name the file the same as the action in the controller, and give it a .cshtml extension.
 
 For example, if you have an About action in the HomeController, you would create a file called About.cshtml inside the Views/Home folder. This file will be the view displayed when users visit the "About" page.
+
+<code> 
+@{
+    ViewData["Title"] = "About";
+}
+<h2>@ViewData["Title"].</h2>
+<h3>@ViewData["Message"]</h3>
+
+<p>Use this area to provide additional information.</p>
+
+
+</code>
