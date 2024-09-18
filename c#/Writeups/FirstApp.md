@@ -25,11 +25,11 @@ You can see terminal at the buttom of the page
 
 **Trust HTTP Certificates**
 <code>dotnet dev-certs https --trust</code>
-
-**we find something like this in terminal**
+<br />
+Finally we find something like this in terminal<br />
 <code> Now listening on: http://localhost:5153</code>
 
-paste the url in browser
+paste the url in browser<br />
 
 **Boom** New app sucessfully created!!!!!!!!!
 
