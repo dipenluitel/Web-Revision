@@ -1,0 +1,22 @@
+button{
+height:50px;
+width: 140px;
+font-size: 30px;
+position: absolute;
+background: linear-gradient(yellow, orange);
+color:black;
+border-radius: 10%;
+box-shadow: 5px 5px 10px 3px green;
+}
+button:hover{
+animation-name: animate;
+animation-duration: 1s;
+	}
+    @keyframes animate {
+from {
+	background: linear-gradient(yellow, green);
+    }
+to {
+	background: linear-gradient(green, yellow);
+    }
+}
