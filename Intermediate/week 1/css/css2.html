@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+header h1 {
+    animation: fadeIn 1s ease forwards;
+    opacity: 0;
+}
+
+header p {
+    animation: fadeIn 2s ease forwards;
+    opacity: 0;
+    animation-delay: 0.5s;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #e94e77;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #d0436b;
+}
+
+.parallax {
+    background-image: url('path/to/your/image.jpg'); /* Replace with an image URL */
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
