@@ -1,0 +1,48 @@
+	main{
+	display: grid;
+    grid-template-areas: 'head head head'
+    					 'side content content'
+                         'foot foot foot';
+	grid-template-rows:	300px auto 80px;
+    gap: 15px;
+    }
+    header{
+    grid-area:head;
+    background: linear-gradient(blue, green, orange);
+    display:flex;
+    place-items: center;
+    justify-content: center;
+    height: 300px;
+    position: relative;
+    font-size: 50px;
+    }
+    aside {
+    grid-area: content;
+    background: linear-gradient(blue, yellow, green);
+    justify-content: center;
+    place-items:center;
+    display:flex;
+    height: 300px;
+    position: relative;
+    font-size: 50px;
+    }
+    article{
+    grid-area: side;
+    height: 300px;
+    background: linear-gradient(orange, blue);
+    position: relative;
+    justify-content: center;
+    display: flex;
+    text-align:center;
+    place-items: center;
+    font-size: 40px;
+    }
+    footer {
+    grid-area: foot;
+    background: linear-gradient(orange, blue);
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    justify-content:center;
+    place-items: center;
+    }
