@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Download</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="paragraph-box">
+        <span class="close" onclick="toggleParagraph()">✖</span>
+        <p>Downloading..</p>
+    </div>
+    <div class="btn-3-wrapper" id="btn3-wrapper">
+        <button class="btn-3">
+            <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24px" width="24px">
+                <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <g id="Interface / Download">
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector"></path>
+                    </g>
+                </g>
+            </svg>
+            <span class="texto">Download </span>
+        </button>
+    </div>
+
+    <script>
+        const overlay = document.querySelector('.overlay');
+        const paragraphBox = document.querySelector('.paragraph-box');
+        const btn3Wrapper = document.getElementById('btn3-wrapper');
+
+        function toggleParagraph() {
+            const isActive = paragraphBox.classList.toggle('active');
+            overlay.style.opacity = isActive ? '1' : '0';
+            overlay.style.visibility = isActive ? 'visible' : 'hidden';
+            btn3Wrapper.style.display = isActive ? 'none' : 'flex'; // Hide button when active
+        }
+
+        btn3Wrapper.addEventListener('click', toggleParagraph);
+
+        overlay.addEventListener('click', () => {
+            paragraphBox.classList.remove('active');
+            overlay.style.opacity = '0';
+            overlay.style.visibility = 'hidden';
+            btn3Wrapper.style.display = 'flex'; // Show button again
+        });
+    </script>
+</body>
+</html>
